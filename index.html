@@ -1,0 +1,1893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Honey ♡</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: #4b2025;
+
+    background:
+        url("assets/backgrounds/paper-background.jpeg")
+        center top / cover fixed no-repeat;
+
+    overflow-x: hidden;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 999;
+    opacity: .08;
+
+    background-image:
+        radial-gradient(#650018 1px, transparent 1px);
+
+    background-size: 8px 8px;
+}
+
+/* =========================
+   MUSIC
+========================= */
+
+.music-btn {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 1000;
+
+    border: 2px solid #650018;
+    border-radius: 50px;
+
+    background: #fff8ed;
+    color: #650018;
+
+    padding: 12px 20px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow: 4px 5px 0 #65001830;
+}
+
+/* =========================
+   GENERAL PAGE
+========================= */
+
+section {
+    min-height: 100vh;
+
+    padding: 90px 7vw;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-inner {
+    width: min(1100px, 100%);
+}
+
+/* =========================
+   COVER
+========================= */
+
+.cover {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(#650018d9, #650018d9),
+        url("assets/backgrounds/paper-background.jpeg")
+        center / cover;
+
+    text-align: center;
+
+    color: #fff8ed;
+}
+
+.cover-paper {
+    width: min(750px, 94vw);
+
+    padding: 60px 45px;
+
+    background: #fff8ed;
+
+    color: #650018;
+
+    box-shadow:
+        14px 16px 0 #25000650,
+        inset 0 0 40px #b8896920;
+
+    transform: rotate(-1deg);
+}
+
+.flowers {
+    font-size: 28px;
+    letter-spacing: 12px;
+}
+
+.cover-small {
+    margin-top: 20px;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    font-weight: 600;
+}
+
+.cover h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(70px, 13vw, 135px);
+
+    line-height: .85;
+
+    color: #a5183d;
+
+    margin: 25px 0 5px;
+}
+
+.cover-name {
+    font-family: "Caveat", cursive;
+
+    font-size: 38px;
+}
+
+.cover-photo {
+    width: min(350px, 85%);
+
+    margin: 30px auto;
+
+    padding: 10px 10px 25px;
+
+    background: white;
+
+    transform: rotate(-4deg);
+
+    box-shadow: 7px 10px 20px #0003;
+}
+
+.cover-photo img {
+    width: 100%;
+    height: 290px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+.cover-photo div {
+    margin-top: 6px;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 25px;
+}
+
+.cover-quote {
+    max-width: 570px;
+
+    margin: 30px auto;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 19px;
+
+    line-height: 1.7;
+}
+
+.start-btn {
+    display: inline-block;
+
+    padding: 15px 28px;
+
+    background: #650018;
+
+    color: white;
+
+    border: 0;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow: 5px 6px #a5183d;
+
+    font-size: 14px;
+}
+
+/* =========================
+   CHAPTER HEADINGS
+========================= */
+
+.chapter {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.chapter-number {
+    font-size: 12px;
+
+    letter-spacing: 5px;
+
+    font-weight: 700;
+
+    color: #a5183d;
+}
+
+.chapter h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(50px, 8vw, 90px);
+
+    line-height: .95;
+
+    margin-top: 15px;
+}
+
+.chapter h2 i {
+    color: #a5183d;
+}
+
+.chapter p {
+    margin-top: 20px;
+
+    opacity: .7;
+}
+
+/* =========================
+   BEGINNING
+========================= */
+
+.beginning {
+    background:
+        linear-gradient(#f7efdfed, #f7efdfed),
+        url("assets/backgrounds/paper-background.jpeg")
+        center / cover;
+}
+
+.beginning-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.story-photo {
+    background: white;
+
+    padding: 12px 12px 28px;
+
+    box-shadow: 8px 12px 25px #0003;
+
+    transform: rotate(-3deg);
+}
+
+.story-photo img {
+    width: 100%;
+
+    height: 470px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.story-photo p {
+    font-family: "Caveat", cursive;
+
+    text-align: center;
+
+    font-size: 27px;
+
+    margin-top: 8px;
+}
+
+.story-text h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 52px;
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+}
+
+.story-text p {
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+.stats {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.stat {
+    padding: 20px;
+
+    background: #a5183d;
+
+    color: white;
+
+    text-align: center;
+}
+
+.stat strong {
+    display: block;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 30px;
+}
+
+/* =========================
+   THINGS I LOVE
+========================= */
+
+.love {
+    background:
+        linear-gradient(#efa5b7ee, #efa5b7ee),
+        url("assets/backgrounds/paper-background.jpeg")
+        center / cover;
+}
+
+.love-cards {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+.love-card {
+    padding: 38px;
+
+    min-height: 250px;
+
+    background: #fff8ed;
+
+    box-shadow: 8px 9px 0 #65001825;
+}
+
+.love-card:nth-child(2) {
+    background: #f6d88f;
+}
+
+.love-card:nth-child(3) {
+    background: #a5183d;
+
+    color: white;
+}
+
+.love-card:nth-child(4) {
+    background: #d5e5e1;
+}
+
+.love-card span {
+    font-family: "Caveat", cursive;
+
+    font-size: 20px;
+}
+
+.love-card h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 42px;
+
+    margin: 10px 0 15px;
+}
+
+.love-card p {
+    line-height: 1.8;
+}
+
+/* =========================
+   PHOTO GALLERY
+========================= */
+
+.gallery-section {
+    background:
+        linear-gradient(#f6eddbed, #f6eddbed),
+        url("assets/backgrounds/paper-background.jpeg")
+        center / cover;
+}
+
+.gallery {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    align-items: start;
+}
+
+.photo-card {
+    background: white;
+
+    padding: 10px 10px 23px;
+
+    box-shadow: 7px 10px 20px #0003;
+}
+
+.photo-card:nth-child(1) {
+    transform: rotate(-3deg);
+}
+
+.photo-card:nth-child(2) {
+    transform: rotate(2deg);
+}
+
+.photo-card:nth-child(3) {
+    transform: rotate(-1deg);
+}
+
+.photo-card:nth-child(4) {
+    transform: rotate(3deg);
+}
+
+.photo-card:nth-child(5) {
+    transform: rotate(-2deg);
+}
+
+.photo-card:nth-child(6) {
+    transform: rotate(2deg);
+}
+
+.photo-card img {
+    width: 100%;
+
+    height: 260px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.photo-card p {
+    text-align: center;
+
+    margin-top: 7px;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 25px;
+}
+
+.sticky-note {
+    padding: 28px;
+
+    background: #f3d68c;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 28px;
+
+    text-align: center;
+
+    box-shadow: 6px 8px 15px #0002;
+
+    transform: rotate(2deg);
+}
+
+/* =========================
+   CHAT
+========================= */
+
+.chat-section {
+    background:
+        linear-gradient(#650018ed, #650018ed),
+        url("assets/backgrounds/paper-background.jpeg")
+        center / cover;
+
+    color: #fff8ed;
+}
+
+.chat {
+    max-width: 700px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.chat-bubble {
+    max-width: 75%;
+
+    padding: 15px 20px;
+
+    color: #650018;
+
+    font-weight: 500;
+}
+
+.chat-bubble.left {
+    align-self: flex-start;
+
+    background: #fff8ed;
+}
+
+.chat-bubble.right {
+    align-self: flex-end;
+
+    background: #efa5b7;
+}
+
+.chat-title {
+    text-align: center;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 38px;
+
+    margin-bottom: 30px;
+}
+
+/* =========================
+   VIDEOS
+========================= */
+
+.video-section {
+    background:
+        linear-gradient(#f5e9d8ee, #f5e9d8ee),
+        url("assets/backgrounds/paper-background.jpeg")
+        center / cover;
+}
+
+.videos {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+}
+
+.video-card {
+    background: white;
+
+    padding: 12px 12px 20px;
+
+    box-shadow: 8px 10px 20px #0003;
+}
+
+.video-card video {
+    width: 100%;
+
+    height: 430px;
+
+    display: block;
+
+    object-fit: cover;
+
+    background: #250006;
+}
+
+.video-card p {
+    color: #650018;
+
+    text-align: center;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 28px;
+
+    margin-top: 5px;
+}
+
+/* =========================
+   FIRST KISS
+========================= */
+
+.kiss-section {
+    background:
+        linear-gradient(#efa5b7ed, #efa5b7ed),
+        url("assets/backgrounds/paper-background.jpeg")
+        center / cover;
+}
+
+.kiss {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.kiss-photo {
+    background: white;
+
+    padding: 12px 12px 28px;
+
+    transform: rotate(-4deg);
+
+    box-shadow: 8px 12px 25px #0003;
+}
+
+.kiss-photo img {
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.kiss-photo p {
+    text-align: center;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 27px;
+
+    margin-top: 5px;
+}
+
+.kiss-text h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 65px;
+
+    line-height: .95;
+
+    margin-bottom: 30px;
+}
+
+.kiss-text p {
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+/* =========================
+   LOVE LETTER
+========================= */
+
+.letter-section {
+    background:
+        linear-gradient(#300006ef, #300006ef),
+        url("assets/backgrounds/paper-background.jpeg")
+        center / cover;
+
+    color: #fff8ed;
+}
+
+.letter {
+    width: min(820px, 100%);
+
+    margin: auto;
+
+    padding: 65px;
+
+    background: #fff8ed;
+
+    color: #650018;
+
+    box-shadow: 12px 15px 0 #0005;
+
+    position: relative;
+}
+
+.letter::before {
+    content: "♡";
+
+    position: absolute;
+
+    top: -32px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 70px;
+
+    height: 70px;
+
+    border-radius: 50%;
+
+    display: grid;
+
+    place-items: center;
+
+    background: #a5183d;
+
+    color: white;
+
+    font-size: 35px;
+}
+
+.letter h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 65px;
+
+    line-height: 1;
+
+    margin-bottom: 35px;
+}
+
+.letter p {
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+.letter .big {
+    font-family: "Caveat", cursive;
+
+    color: #a5183d;
+
+    font-size: 40px;
+
+    margin: 30px 0;
+}
+
+.signature {
+    text-align: right;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 42px;
+
+    margin-top: 35px;
+}
+
+/* =========================
+   FINAL
+========================= */
+
+.final {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(#650018e8, #650018e8),
+        url("assets/backgrounds/paper-background.jpeg")
+        center / cover;
+
+    color: white;
+
+    text-align: center;
+}
+
+.final h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(55px, 9vw, 100px);
+
+    line-height: .95;
+
+    margin: 25px 0;
+}
+
+.final p {
+    font-size: 20px;
+
+    line-height: 1.8;
+}
+
+.final-hand {
+    font-family: "Caveat", cursive;
+
+    color: #efa5b7;
+
+    font-size: 45px;
+
+    margin: 30px 0;
+}
+
+.heart-button {
+    width: 110px;
+
+    height: 110px;
+
+    border: 0;
+
+    border-radius: 50%;
+
+    background: #a5183d;
+
+    color: white;
+
+    font-size: 55px;
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 30px #0005;
+
+    transition: .3s;
+}
+
+.heart-button:hover {
+    transform: scale(1.12);
+}
+
+.secret {
+    opacity: 0;
+
+    transform: translateY(20px);
+
+    transition: .8s;
+
+    font-family: "Caveat", cursive;
+
+    color: #efa5b7;
+
+    font-size: 38px;
+
+    margin-top: 30px;
+}
+
+.secret.show {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+.footer {
+    margin-top: 60px;
+
+    opacity: .65;
+
+    font-size: 14px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width: 750px) {
+
+    section {
+        padding: 70px 20px;
+    }
+
+    .cover-paper {
+        padding: 45px 25px;
+    }
+
+    .beginning-grid,
+    .kiss,
+    .videos {
+        grid-template-columns: 1fr;
+    }
+
+    .love-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .story-photo img,
+    .kiss-photo img {
+        height: 350px;
+    }
+
+    .video-card video {
+        height: 350px;
+    }
+
+    .letter {
+        padding: 55px 25px;
+    }
+
+    .letter h2 {
+        font-size: 48px;
+    }
+
+    .chat-bubble {
+        max-width: 88%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- MUSIC -->
+
+<audio id="musicPlayer" loop></audio>
+
+<button class="music-btn" onclick="toggleMusic()">
+    🎵 Play our song
+</button>
+
+
+<!-- =========================
+     COVER
+========================= -->
+
+<section class="cover" id="home">
+
+    <div class="cover-paper">
+
+        <div class="flowers">
+            🌷 🌷 🌹 ✨ ✧
+        </div>
+
+        <div class="cover-small">
+            A LITTLE SCRAPBOOK MADE WITH LOVE<br>
+            CREATED ESPECIALLY FOR
+        </div>
+
+        <h1>Honey</h1>
+
+        <div class="cover-name">
+            Ritik ♡
+        </div>
+
+        <div class="cover-photo">
+
+            <img src="assets/photos/photo01.png"
+                 alt="Ritik and Nandu">
+
+            <div>
+                Ritik & Nandu
+            </div>
+
+        </div>
+
+        <p class="cover-quote">
+            “2021 gave me my best friend.
+            Somewhere along the way,
+            I got my favourite person too.”
+            <br>
+            — your Nandu
+        </p>
+
+        <button class="start-btn"
+                onclick="document.getElementById('beginning').scrollIntoView({behavior:'smooth'})">
+
+            OPEN OUR STORY ♡
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CHAPTER I
+========================= -->
+
+<section class="beginning" id="beginning">
+
+<div class="section-inner">
+
+    <div class="chapter">
+
+        <div class="chapter-number">
+            CHAPTER I
+        </div>
+
+        <h2>
+            Before we became <i>us...</i>
+        </h2>
+
+        <p>
+            December 2021. And then somehow everything changed.
+        </p>
+
+    </div>
+
+
+    <div class="beginning-grid">
+
+        <div class="story-photo">
+
+            <img src="assets/photos/story.jpeg"
+                 alt="Our beginning">
+
+            <p>
+                December 2021 ♡
+            </p>
+
+        </div>
+
+
+        <div class="story-text">
+
+            <h3>
+                First came<br>
+                friendship.
+            </h3>
+
+            <p>
+                December 2021.
+                Just two best friends who somehow
+                had an endless amount of things to talk about.
+            </p>
+
+            <p>
+                We talked about everything.
+                We annoyed each other.
+                We laughed.
+                We fought.
+                We made up.
+                We stayed.
+            </p>
+
+            <p>
+                And somewhere along the way...
+            </p>
+
+            <p class="hand" style="font-size:35px;">
+                you became my person. ♡
+            </p>
+
+            <div class="stats">
+
+                <div class="stat">
+                    <strong>2021</strong>
+                    best friends
+                </div>
+
+                <div class="stat">
+                    <strong>∞</strong>
+                    endless conversations
+                </div>
+
+                <div class="stat">
+                    <strong>♡</strong>
+                    best friends → lovers
+                </div>
+
+                <div class="stat">
+                    <strong>1.5+</strong>
+                    years of us
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CHAPTER II
+========================= -->
+
+<section class="love">
+
+<div class="section-inner">
+
+    <div class="chapter">
+
+        <div class="chapter-number">
+            CHAPTER II
+        </div>
+
+        <h2>
+            Things I love<br>
+            <i>about you.</i>
+        </h2>
+
+        <p>
+            Warning: this list could technically never end.
+        </p>
+
+    </div>
+
+
+    <div class="love-cards">
+
+        <article class="love-card">
+
+            <span>01</span>
+
+            <h3>Your eyes.</h3>
+
+            <p>
+                I swear I could look at them for way longer
+                than I should. There is just something about them.
+            </p>
+
+        </article>
+
+
+        <article class="love-card">
+
+            <span>02</span>
+
+            <h3>Your nature.</h3>
+
+            <p>
+                The person you are, the little things you do,
+                and all the things you probably don't even notice.
+            </p>
+
+        </article>
+
+
+        <article class="love-card">
+
+            <span>03</span>
+
+            <h3>Your chaos.</h3>
+
+            <p>
+                Because apparently I needed someone who could
+                match my level of nonsense.
+                And honestly? I wouldn't change it.
+            </p>
+
+        </article>
+
+
+        <article class="love-card">
+
+            <span>04</span>
+
+            <h3>Just... you.</h3>
+
+            <p>
+                Your eyes. Your body. Your smile.
+                Your voice. Your stupid little habits.
+                Basically everything.
+            </p>
+
+        </article>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CHAPTER III
+========================= -->
+
+<section class="gallery-section">
+
+<div class="section-inner">
+
+    <div class="chapter">
+
+        <div class="chapter-number">
+            CHAPTER III
+        </div>
+
+        <h2>
+            Pieces of <i>us.</i>
+        </h2>
+
+        <p>
+            The pretty. The stupid. The cute.
+            The completely chaotic.
+        </p>
+
+    </div>
+
+
+    <div class="gallery">
+
+        <figure class="photo-card">
+
+            <img src="assets/photos/photo02.jpeg"
+                 alt="Memory">
+
+            <p>
+                one of my favourites ♡
+            </p>
+
+        </figure>
+
+
+        <figure class="photo-card">
+
+            <img src="assets/photos/photo03.jpeg"
+                 alt="Memory">
+
+            <p>
+                look at these idiots 😭
+            </p>
+
+        </figure>
+
+
+        <div class="sticky-note">
+
+            NOTE TO SELF
+
+            <br><br>
+
+            keep this boy.
+
+            <br>
+
+            <b>seriously.</b>
+
+        </div>
+
+
+        <figure class="photo-card">
+
+            <img src="assets/photos/photo04.jpeg"
+                 alt="Memory">
+
+            <p>
+                a tiny memory
+            </p>
+
+        </figure>
+
+
+        <figure class="photo-card">
+
+            <img src="assets/photos/photo05.jpeg"
+                 alt="Memory">
+
+            <p>
+                my comfort person
+            </p>
+
+        </figure>
+
+
+        <figure class="photo-card">
+
+            <img src="assets/photos/photo06.png"
+                 alt="Memory">
+
+            <p>
+                completely stupid.
+                completely happy.
+            </p>
+
+        </figure>
+
+    </div>
+
+
+    <div class="sticky-note"
+         style="max-width:650px;margin:50px auto 0;">
+
+        “Somewhere between all the chaos,
+        you became my comfort.”
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CHAPTER IV
+========================= -->
+
+<section class="chat-section">
+
+<div class="section-inner">
+
+    <div class="chapter">
+
+        <div class="chapter-number" style="color:#efa5b7;">
+            CHAPTER IV
+        </div>
+
+        <h2>
+            We literally talk<br>
+            about <i>everything.</i>
+        </h2>
+
+        <p>
+            Our conversations deserve their own museum.
+        </p>
+
+    </div>
+
+
+    <div class="chat-title">
+        OUR VERY SERIOUS RELATIONSHIP
+    </div>
+
+
+    <div class="chat">
+
+        <div class="chat-bubble left">
+            nandu: honey listen 😭
+        </div>
+
+        <div class="chat-bubble right">
+            riti: haan nandu bolo
+        </div>
+
+        <div class="chat-bubble left">
+            nandu: I have something important to say
+        </div>
+
+        <div class="chat-bubble right">
+            riti: ab kya hua 😭
+        </div>
+
+        <div class="chat-bubble left">
+            nandu: I love you idiot
+        </div>
+
+        <div class="chat-bubble right">
+            riti: 😭❤️
+        </div>
+
+    </div>
+
+
+    <div style="max-width:700px;margin:50px auto 0;text-align:center;">
+
+        <p style="font-family:Caveat;font-size:34px;">
+            We could literally talk for hours.
+        </p>
+
+        <p style="line-height:1.9;margin-top:20px;">
+
+            About serious things.
+            Stupid things.
+            Random things.
+            Things that don't matter.
+            Things that somehow become important.
+
+            <br><br>
+
+            And somehow...
+            I never get tired of talking to you.
+
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CHAPTER V
+========================= -->
+
+<section class="video-section">
+
+<div class="section-inner">
+
+    <div class="chapter">
+
+        <div class="chapter-number">
+            CHAPTER V
+        </div>
+
+        <h2>
+            Memories that<br>
+            <i>move.</i>
+        </h2>
+
+        <p>
+            Because some memories deserve to move
+            instead of staying still.
+        </p>
+
+    </div>
+
+
+    <div class="videos">
+
+        <div class="video-card">
+
+            <video controls preload="metadata">
+
+                <source
+                    src="assets/videos/video01.mp4"
+                    type="video/mp4">
+
+            </video>
+
+            <p>
+                our chaos, on camera 🎥
+            </p>
+
+        </div>
+
+
+        <div class="video-card">
+
+            <video controls preload="metadata">
+
+                <source
+                    src="assets/videos/video02.mp4"
+                    type="video/mp4">
+
+            </video>
+
+            <p>
+                another little memory ♡
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FIRST KISS
+========================= -->
+
+<section class="kiss-section">
+
+<div class="section-inner">
+
+    <div class="chapter">
+
+        <div class="chapter-number">
+            THE MEMORY I SAVED SEPARATELY
+        </div>
+
+        <h2>
+            Our first<br>
+            <i>kiss.</i>
+        </h2>
+
+    </div>
+
+
+    <div class="kiss">
+
+        <div class="kiss-photo">
+
+            <img src="assets/photos/first-kiss.jpg"
+                 alt="Our first kiss">
+
+            <p>
+                the beginning of something ♡
+            </p>
+
+        </div>
+
+
+        <div class="kiss-text">
+
+            <h3>
+                I remember.
+            </h3>
+
+            <p>
+                I don't think you realize how many times
+                I've replayed this moment in my head.
+            </p>
+
+            <p>
+                Out of all the memories we've made,
+                this one will always have its own little
+                corner in my heart.
+            </p>
+
+            <p>
+                Because that wasn't just our first kiss.
+            </p>
+
+            <p>
+                It was one of those tiny moments where
+                everything suddenly felt real.
+            </p>
+
+            <p class="hand" style="font-size:34px;">
+                And yes Honey...
+                I remember it.
+                Very clearly. ♡
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     LOVE LETTER
+========================= -->
+
+<section class="letter-section">
+
+<div class="section-inner">
+
+    <div class="chapter">
+
+        <div class="chapter-number" style="color:#efa5b7;">
+            DEAR HONEY
+        </div>
+
+        <h2>
+            Things I don't<br>
+            <i>say enough.</i>
+        </h2>
+
+    </div>
+
+
+    <div class="letter">
+
+        <p>
+            Sometimes I think about how weirdly beautiful
+            our story is.
+        </p>
+
+        <p>
+            We started as best friends in 2021.
+            We talked about everything.
+            We knew each other's stupid sides.
+            We fought.
+            We laughed.
+            We stayed.
+        </p>
+
+        <p>
+            And then somehow, somewhere between all of that,
+            I fell in love with you.
+        </p>
+
+        <p>
+            I love your eyes.
+            Probably more than I should admit.
+        </p>
+
+        <p>
+            I love your body.
+            I love your nature.
+            I love the way you talk.
+            I love the way we can sit and chatter
+            about absolutely anything.
+        </p>
+
+        <p class="big">
+            But more than all of those things,
+            I love the feeling of having you in my life.
+        </p>
+
+        <p>
+            You are my best friend,
+            my favourite person,
+            my favourite headache,
+            and my Honey.
+        </p>
+
+        <p>
+            I don't want a perfect love story.
+        </p>
+
+        <p class="big">
+            I want ours.
+        </p>
+
+        <p>
+            The romantic parts.
+            The chaotic parts.
+            The stupid fights.
+            The laughter after them.
+            The random conversations.
+            The hugs.
+            The kisses.
+            Everything.
+        </p>
+
+        <p class="big">
+            I choose you.
+            <br>
+            In every version of us.
+        </p>
+
+        <div class="signature">
+            Forever your Nandu ♡
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FINAL PAGE
+========================= -->
+
+<section class="final">
+
+<div>
+
+    <div style="font-size:28px;">
+        🌹
+    </div>
+
+    <p style="letter-spacing:5px;font-size:12px;">
+        ONE LAST PAGE...
+    </p>
+
+    <h2>
+        Happy Boyfriend's Day,<br>
+        Honey.
+    </h2>
+
+    <p>
+        1.5 years of us.<br>
+        A million conversations.<br>
+        And somehow...
+        I still want more.
+    </p>
+
+    <div class="final-hand">
+        I love you, Honey.
+    </div>
+
+    <button class="heart-button"
+            onclick="showSecret()">
+
+        ♡
+
+    </button>
+
+    <div id="secret" class="secret">
+
+        Now come here.<br>
+
+        Bauni Princess has a hug waiting for you. 🫂❤️
+
+    </div>
+
+    <div class="footer">
+
+        — made with love, chaos & way too many feelings<br>
+        <b>from Nandu to Ritik ♡</b>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<script>
+
+/* =========================
+   MUSIC
+========================= */
+
+const songs = {
+    cover: "assets/songs/opening.mp3",
+    beginning: "assets/songs/story.mp3",
+    love: "assets/songs/memories.mp3",
+    kiss: "assets/songs/first-kiss.mp3",
+    final: "assets/songs/final.mp3"
+};
+
+const player = document.getElementById("musicPlayer");
+
+let playing = false;
+
+function playSong(song) {
+
+    if (player.src !== new URL(song, window.location.href).href) {
+
+        player.src = song;
+
+    }
+
+    player.play().catch(() => {});
+
+    playing = true;
+
+    document.querySelector(".music-btn").textContent =
+        "⏸ Pause our song";
+}
+
+function toggleMusic() {
+
+    if (!player.src) {
+
+        playSong(songs.cover);
+
+        return;
+    }
+
+    if (player.paused) {
+
+        player.play();
+
+        document.querySelector(".music-btn").textContent =
+            "⏸ Pause our song";
+
+    } else {
+
+        player.pause();
+
+        document.querySelector(".music-btn").textContent =
+            "🎵 Play our song";
+    }
+}
+
+
+/* =========================
+   CHANGE SONG BY SECTION
+========================= */
+
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver(
+
+    entries => {
+
+        entries.forEach(entry => {
+
+            if (!entry.isIntersecting) return;
+
+            if (!playing) return;
+
+            const id = entry.target.id;
+
+            if (id === "beginning") {
+
+                playSong(songs.beginning);
+
+            }
+
+            if (entry.target.classList.contains("love")) {
+
+                playSong(songs.love);
+
+            }
+
+            if (entry.target.classList.contains("kiss-section")) {
+
+                playSong(songs.kiss);
+
+            }
+
+            if (entry.target.classList.contains("final")) {
+
+                playSong(songs.final);
+
+            }
+
+        });
+
+    },
+
+    {
+        threshold: .55
+    }
+
+);
+
+sections.forEach(section => observer.observe(section));
+
+
+/* =========================
+   SECRET MESSAGE
+========================= */
+
+function showSecret() {
+
+    document.getElementById("secret")
+        .classList.add("show");
+
+    createHearts();
+}
+
+
+/* =========================
+   LITTLE HEART ANIMATION
+========================= */
+
+function createHearts() {
+
+    for (let i = 0; i < 20; i++) {
+
+        const heart = document.createElement("div");
+
+        heart.innerHTML = "♡";
+
+        heart.style.position = "fixed";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.bottom = "20px";
+
+        heart.style.color = "#efa5b7";
+
+        heart.style.fontSize =
+            (15 + Math.random() * 30) + "px";
+
+        heart.style.zIndex = "2000";
+
+        heart.style.pointerEvents = "none";
+
+        heart.style.transition =
+            "transform 2s ease, opacity 2s ease";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+
+            heart.style.transform =
+                `translateY(-${300 + Math.random() * 400}px) rotate(${Math.random()*90-45}deg)`;
+
+            heart.style.opacity = "0";
+
+        }, 50);
+
+        setTimeout(() => {
+
+            heart.remove();
+
+        }, 2200);
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
